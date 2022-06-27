@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Heavy Bangers</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5" id="alwaysontop">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            
+                            <li class="nav-item"><a class="nav-link" href="https://moodle3.cs.pollub.pl/">Moodle</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" onclick="register();">Register</a></li>
+							<li class="nav-item"><a class="nav-link" href="#" onclick="checklocalstorage();">User</a></li>
+							
+							<li class="nav-item">
+								
+							</li>
+                        </ul>
+						<a class="nav-link" href="#" onclick="change_mode()"><img src="img/lm.png" id="switchero_mods" alt="Light_mode"  ></a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="bg-dark py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2" id="Band">Powerwolf</h1>
+                                <p class="lead fw-normal text-white-50 mb-4" id="Band_info">Niemiecki zespół tworzący muzykę powermetalową, powstały w 2003 roku w Saarbrücken. Członkowie zespołu posługują się pseudonimami. Charakteryzuje się motywami zaczerpniętymi z wierzeń i legend znanych z kultury rumuńskiej – to jest wilkołaków czy wampirów.</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-outline-light btn-lg px-4" id="Band_link" href="https://www.powerwolf.net/">Dowiedz się więcej</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-xl-block text-center">
+						<div class="images-slideshow">
+        <div class="imageSlides fade">
+            <img src="img/1.jpg" alt="Img1">
+        </div>
+        <div class="imageSlides fade">
+            <img src="img/2.jpg" alt="Img2">
+        </div>
+        <div class="imageSlides fade">
+            <img src="img/3.jpg" alt="Img3">
+        </div>
+        <a class="slider-btn previous" onclick="setSlides(-1)">❮</a>
+        <a class="slider-btn next" onclick="setSlides(1)">❯</a>
+		</div>
+						</div>
+                    </div>
+                </div>
+            </header>
+            <!-- Features section-->
+			<div id="forms" >
+			
+			</div>
+            <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Heavy metal</h2></div>
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                                    <h2 class="h5">Historia</h2>
+                                    <p class="mb-0">pochodna muzyki rockowej  powstała na przełomie lat 60. i 70. XX wieku w Wielkiej Brytanii i Stanach Zjednoczonych. Gatunek charakteryzują ciężkie i ostre brzmienia, przesterowane solówki gitarowe, dynamiczna sekcja rytmiczna i wielość technik wokalnych.</p>
+                                </div>
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                                    <h2 class="h5">Charakterystyka</h2>
+                                    <p class="mb-0">Tradycyjnie z muzyką metalową kojarzone są głośne, przesterowane gitary, intensywna sekcja rytmiczna, wyraźne basy i mocny wokal. Encyklopedia muzyki PWN definiuje heavy metal jako muzykę charakteryzującą się znacznie szybszym rytmem niż w innych gatunkach rocka, bardziej dynamiczną sekcją instrumentalną i ostro brzmiącymi solówkami gitarowymi.</p>
+                                </div>
+                                <div class="col mb-5 mb-md-0 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                                    <h2 class="h5">Wizerunek i moda</h2>
+                                    <p class="mb-0">Podobnie, jak w przypadku innych gatunków muzyki popularnej, tak i w heavy metalu wizerunek odgrywa ważną rolę. Oprócz samej warstwy dźwiękowej i tekstowej, wizerunek wyrażany jest poprzez okładki albumów, loga zespołów, scenografię koncertów i teledysków.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Heavy Bangers</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+		<script src="js/change.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </body>
+</html>
